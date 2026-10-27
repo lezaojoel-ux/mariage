@@ -7,7 +7,7 @@
 <meta name="description" content="Alain & Nadege ont la joie de vous convier à célébrer leur union le samedi 5 décembre 2026 à Bonon, Côte d'Ivoire.">
 <meta property="og:title" content="Mariage d'Alain & Nadege — 5 décembre 2026">
 <meta property="og:description" content="Cérémonie civile à 08h00 à la Mairie de Bonon, cérémonie religieuse à 14h00 à l'E.E.P.V. de Bonon.">
-<meta property="og:image" content="https://alain-nadege.vercel.app/photo-couple.jpg">
+<meta property="og:image" content="https://mariage-three-phi.vercel.app/photo-couple.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -210,7 +210,7 @@
     const f = id => document.getElementById(id).value.trim();
     let t = `💍 Mariage Alain & Nadege — 5 déc. 2026\n\nNom : ${f("nom")}\nRéponse : ${f("pres")}\nPersonnes : ${f("nb")}`;
     if (f("msg")) t += `\nMessage : ${f("msg")}`;
-    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`, "_blank");
+    window.open(`https://api.whatsapp.com/send?phone=${WHATSAPP}&text=${encodeURIComponent(t)}`, "_blank");
   });
 
   document.getElementById("cal").addEventListener("click", () => {
